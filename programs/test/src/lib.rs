@@ -5,7 +5,7 @@ use svm_spoke::{
     utils::{is_claimed, process_proof, set_claimed},
 };
 
-declare_id!("8tsEfDSiE4WUMf97oyyyasLAvWwjeRZb2GByh4w7HckA");
+declare_id!("CL9qZHUuwmN2QwALskud3pQjCGEzVgtoEW9yH6F54TyD");
 
 // This program is used to test the svm_spoke program internal utils methods. It's kept separate from the svm_spoke
 // as it simply exports utils methods so direct unit tests can be run against them.

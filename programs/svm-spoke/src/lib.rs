@@ -14,7 +14,7 @@ security_txt! {
     auditors: "OpenZeppelin"
 }
 
-declare_id!("DLv3NggMiSaef97YCkew5xKUHDh13tVGZ7tydt3ZeAru");
+declare_id!("8w5ayAyaEFdQtnn74xBZEeyaYd7dcdBLZV7hCHgNcNGs");
 
 // External programs from idls directory (requires anchor run generateExternalTypes).
 declare_program!(message_transmitter);
