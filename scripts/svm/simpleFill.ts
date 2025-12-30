@@ -17,10 +17,11 @@ import { hideBin } from "yargs/helpers";
 import {
   calculateRelayHashUint8Array,
   getFillRelayDelegatePda,
-  getSpokePoolProgram,
+  // getSpokePoolProgram,
   intToU8Array32,
 } from "../../src/svm/web3-v1";
 import { FillDataValues } from "../../src/types/svm";
+import { getSpokePoolProgram } from "../../src/svm/assets";
 
 // Set up the provider
 const provider = AnchorProvider.env();

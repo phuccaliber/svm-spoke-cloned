@@ -21,10 +21,11 @@ import { hideBin } from "yargs/helpers";
 import {
   getDepositPda,
   getDepositSeedHash,
-  getSpokePoolProgram,
+  // getSpokePoolProgram,
   intToU8Array32,
   u8Array32ToInt,
 } from "../../src/svm/web3-v1";
+import { getSpokePoolProgram } from "../../src/svm/assets";
 
 // Set up the provider
 const provider = AnchorProvider.env();

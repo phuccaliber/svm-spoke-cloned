@@ -24,8 +24,8 @@ svm_spoke = "8w5ayAyaEFdQtnn74xBZEeyaYd7dcdBLZV7hCHgNcNGs"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
-wallet = "test/svm/keys/localnet-wallet.json"
+cluster = "https://api.devnet.solana"
+wallet = "./acrossDev.json"
 
 [scripts]
 addressToPublicKey = "NODE_NO_WARNINGS=1 yarn run ts-node ./scripts/svm/addressToPublicKey.ts"

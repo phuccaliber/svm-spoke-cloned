@@ -65,11 +65,11 @@ pub struct FillRelay<'info> {
         payer = signer,
         space = DISCRIMINATOR_SIZE + FillStatusAccount::INIT_SPACE,
         seeds = [b"fills", relay_hash.as_ref()],
-        bump,
-        constraint = is_relay_hash_valid(
-            &relay_hash,
-            &relay_data.clone().unwrap_or_else(|| instruction_params.as_ref().unwrap().relay_data.clone()),
-            &state) @ SvmError::InvalidRelayHash
+        bump
+        // constraint = is_relay_hash_valid(
+        //     &relay_hash,
+        //     &relay_data.clone().unwrap_or_else(|| instruction_params.as_ref().unwrap().relay_data.clone()),
+        //     &state) @ SvmError::InvalidRelayHash
     )]
     pub fill_status: Account<'info, FillStatusAccount>,
 
