@@ -25,12 +25,12 @@ import {
   intToU8Array32,
   u8Array32ToInt,
 } from "../../src/svm/web3-v1";
-import { getSpokePoolProgram } from "../../src/svm/assets";
+import { getDevnetSpokePoolProgram } from "../../src/svm/assets";
 
 // Set up the provider
 const provider = AnchorProvider.env();
 anchor.setProvider(provider);
-const program = getSpokePoolProgram(provider);
+const program = getDevnetSpokePoolProgram(provider);
 const programId = program.programId;
 console.log("SVM-Spoke Program ID:", programId.toString());
 

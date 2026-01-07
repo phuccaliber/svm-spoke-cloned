@@ -46,6 +46,5 @@ storage-layouts/proposed*
 target
 **/*.rs.bk
 test-ledger
-src/svm/assets 
 src/svm/clients/*
 !src/svm/clients/index.ts

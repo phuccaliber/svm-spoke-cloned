@@ -21,12 +21,12 @@ import {
   intToU8Array32,
 } from "../../src/svm/web3-v1";
 import { FillDataValues } from "../../src/types/svm";
-import { getSpokePoolProgram } from "../../src/svm/assets";
+import { getDevnetSpokePoolProgram } from "../../src/svm/assets";
 
 // Set up the provider
 const provider = AnchorProvider.env();
 anchor.setProvider(provider);
-const program = getSpokePoolProgram(provider);
+const program = getDevnetSpokePoolProgram(provider);
 const programId = program.programId;
 
 // Parse arguments
